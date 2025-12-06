@@ -1,0 +1,78 @@
+[10-Jul-2019 23:33:52 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:33:52 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:33:52 UTC] PHP Fatal error:  require(): Failed opening required '../includes/dbh.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:35:55 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:35:55 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:35:55 UTC] PHP Fatal error:  require(): Failed opening required '../includes/dbh.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:42:03 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:42:03 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[10-Jul-2019 23:42:03 UTC] PHP Fatal error:  require(): Failed opening required '../includes/dbh.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[11-Jul-2019 21:28:12 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[11-Jul-2019 21:28:12 UTC] PHP Warning:  require(../includes/dbh.inc.php): failed to open stream: No such file or directory in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[11-Jul-2019 21:28:12 UTC] PHP Fatal error:  require(): Failed opening required '../includes/dbh.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 3
+[16-Jan-2024 08:22:58 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[16-Jan-2024 08:22:58 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[09-Feb-2024 08:55:22 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[09-Feb-2024 08:55:22 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[30-Apr-2024 09:59:05 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[30-Apr-2024 09:59:05 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:12 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:12 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:18 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:18 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:19 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:19 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:19 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:19 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:19 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:19 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:19 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:19 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:19 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:19 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
+[03-Aug-2024 05:40:19 America/Boise] PHP Warning:  Undefined array key "product" in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 5
+[03-Aug-2024 05:40:19 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php:10
+Stack trace:
+#0 /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php(10): mysqli_fetch_assoc(false)
+#1 {main}
+  thrown in /home3/shadowt4/public_html/spellboundsparkly/includes/modal_processors/store.php on line 10
