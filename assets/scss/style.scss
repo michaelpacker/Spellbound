@@ -1,0 +1,281 @@
+/* CSS Document */
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+@import 'landing';
+@import 'store';
+@import 'modals';
+@import 'pagination';
+
+@import 'shows';
+@import 'authentication';
+@import 'footer';
+@import 'admin';
+@import 'forms';
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: $black;
+	background-image: linear-gradient($white, $dark_white);
+	background-color: $dark_white;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+	header {
+		margin-bottom: 2em;
+		height: 100px;
+	}
+	
+		h1 {
+			display: block;
+			width: 100%;
+			height: 100px;
+			background-image: url(../img/logos/spellbound_logo_blk.png);
+			background-repeat: no-repeat;
+			background-position: 1em 0;
+			background-size: contain;
+			text-indent: -1000em;
+			background-color: none;
+		
+
+		}
+	
+}
+
+
+
+
+
+header, #main, footer {
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+#main {
+	box-sizing: border-box;
+	padding: 0 2%;
+	min-height: 100%;
+	
+	.contentContainer {
+		width: 70%;
+		max-width: 1200px;
+		min-width: 600px;
+		margin: 0 auto;
+		padding-bottom: 4em;
+		position: relative;
+	}
+}
+
+.section {
+	margin-bottom: 3em;
+}
+
+.section .content {
+	max-width: 480px;
+	min-width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+h1, h2, h3, h4 {
+	font-weight: 220;
+	margin-top: 0.25em;
+}
+h2, h3, h4 {
+	font-family: 'headline_hplhstwo';
+}
+h2 {
+	font-size: 3em;
+}
+h3 {
+	font-size: 2.6em;
+}
+h4 {
+	font-size: 2.2em;
+}
+label, input {
+	display: block;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: .25em;
+}
+
+input {
+	line-height: 1.6em;
+	padding: 4px;
+	margin-bottom: 1em;
+}
+
+
+.accountControls {
+	position: absolute;
+	top: 1em;
+	right: 2em;
+	
+	ul {
+		list-style-type: none;
+		
+		li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+	
+	button {
+		border: none;
+		background: none;
+		background-image: none;
+		font-weight: bold;
+		color: $body;
+		text-decoration: underline;
+		box-shadow: none;
+	}
+	a, a:link, a:visited {
+		color: $body;
+		font-weight: bold;
+	}
+}
+
+.full_black .accountControls {
+	a, a:link, a:visited {
+		color: $dark_white;
+	}
+	button {
+		color: $dark_white;
+	}
+}
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* TABS */
+.tabNav {
+	
+	ul {
+		list-style-type: none;
+		padding: 0;
+		
+		li {
+			display: inline-block;
+			font-family: 'OpenSansLight';
+			font-size: 1.6em;
+			margin-right: 1.4em;
+			
+			a, a:link, a:visited {
+				color: $body;
+				text-decoration: none;
+			}
+			
+			a:hover, a:active, a:focus {
+				color: $black_08;
+			}
+			
+			a.active {
+				color: $body;
+				border-bottom: 3px solid $body;
+			}
+			
+		}
+	}
+
+}
+
+[role="tab"] {
+  position: relative;
+  margin: 0;
+
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+[role="tab"]:hover::before,
+[role="tab"]:focus::before,
+[role="tab"][aria-selected="true"]::before {
+  position: absolute;
+  bottom: 100%;
+  right: -1px;
+  content: '';
+}
+
+[role="tab"]:hover,
+[role="tab"]:focus,
+[role="tab"]:active {
+  outline: 0;
+  border-radius: 0;
+  color: inherit;
+}
+[role="tab"][aria-selected="true"] {
+  outline: 0;
+}
+
+[role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
+  border-bottom: 5px solid hsl(218, 96%, 48%);
+}
+
+[role="tab"][aria-selected="true"]::after {
+  position: absolute;
+  z-index: 3;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+  height: 0.3em;
+  content: '';
+}
+
+
+[role="tab"]:hover::before,
+[role="tab"]:focus::before {
+  border-color: hsl(20, 96%, 48%);
+}
+
+[role="tabpanel"] {
+  position: relative;
+  z-index: 2;
+}
+
+[role="tabpanel"]:focus {
+  outline: 0;
+}
+
+[role="tabpanel"]:focus::after {
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  left: -1px;
+
+  content: '';
+}
+
+[role="tabpanel"] p {
+  margin: 0;
+}
+
+[role="tabpanel"] * + p {
+  margin-top: 1em;
+}
+
+
+/* Accessibility */
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}

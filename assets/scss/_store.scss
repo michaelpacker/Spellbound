@@ -1,0 +1,277 @@
+/* STORE */
+.catalogContainer.old {
+	a, a:link, a:visited {
+		color: $black;
+		text-decoration: underline;
+	}
+	
+	a:focus, a:active, a:hover {
+		color: #376376;
+	}
+	
+	.productGrid {
+		display: grid;
+		grid-column-gap: 20px;
+		grid-row-gap: 80px;
+		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: 4em;
+
+		a.card,
+		a:link.card {
+			padding: 24px;
+			box-sizing: border-box;
+			text-decoration: none;
+			background: $white;
+
+			h3 {
+				margin-top:0;
+				text-decoration: none;	
+			}
+			p {
+				text-decoration: none;
+			}
+			img {
+				width: 100%;
+			}
+			
+			&:hover {
+				box-shadow: 0px 0px 12px #cecece;
+				text-decoration: none;
+			}
+			
+			button.addToCart {
+				border: 1px solid #dbdbdb;
+				border-radius: 2px;
+				padding: 4px;
+				width: 100%;
+				color: #dbdbdb;
+				padding-left: 24px;
+				min-height: 30px;
+				height: 36px;
+				position: relative;
+				background:  url(../img/logos/paypal_tag_faded.png);
+				background-repeat: no-repeat;
+				background-position: 4px 4px;
+				cursor: pointer;
+			}
+
+			button.addToCart:active,
+			button.addToCart:hover,
+			button.addToCart:focus {
+				background:  url(../img/logos/paypal_tag.png);
+				background-repeat: no-repeat;
+				background-position: 4px 4px;
+				border: 1px solid #444;
+				color: #444;
+				cursor: pointer;
+			}
+			
+		}
+		
+	}
+
+}
+
+.catalogIntro {
+	a, a:link, a:visited {
+		color: $link;
+	}
+
+	a:hover, a:active, a:focus {
+		color: $link_active;
+	}
+}
+
+.catalogContainer {
+	.productGrid {
+		display: grid;
+		grid-column-gap: 20px;
+		grid-row-gap: 80px;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		margin-bottom: 4em;
+		
+		.card {
+			box-sizing: border-box;
+			/* background: $white; */
+			justify-self: stretch;
+			height: 520px;
+			
+			.cardContainer.flip {
+				transform: rotateY(180deg);
+				
+			}
+			
+			.cardContainer {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+				transition: transform 0.5s;
+				transform-style: preserve-3d;
+				
+				.cardDetails {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+					margin-bottom: 1em;
+					align-items: center;
+					
+					p {
+						font-weight: bold;
+						margin: 0;
+					}
+				}
+			}
+			.cardFront, .cardBack {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				padding: 24px;
+				background-color: $white;
+				box-sizing: border-box;
+				backface-visibility: hidden;
+			}
+			
+			.cardFront {
+				display: grid;
+				
+				h3 {
+					justify-self: center;
+				}
+				
+				img {
+					justify-self: center;
+					max-width: 240px;
+				}
+			}
+			
+			.cardBack {
+				transform:rotateY(180deg);
+				
+				.cardDetails {
+					align-items: flex-start;
+					
+					h4 {
+						margin-top: 0;
+						margin-bottom: 0.2em;
+					}
+					
+				}
+				.cardDesc {
+					line-height: 1.5em;
+					
+					ul {
+						
+						padding-left: 10px;
+						
+						li {
+							margin-bottom: 1em;
+						}
+					}
+					
+				}
+			}
+			
+			.detailToggle {
+				background: none;
+				border: none;
+				font-size: 1.2em;
+				color: $link;
+				min-width: 24px;
+				min-height: 24px;
+				
+				&:hover, &:active, &:focus {
+					color: $link_active;
+					outline: 1px solid $link_active;
+				}
+				
+			}
+			
+			h3 {
+				margin-top: 0;
+			}
+			p {
+				text-decoration: none;
+				
+				&.product-price {
+					font-weight: bold;
+				}
+				
+			}
+			img {
+				width: 100%;
+			}
+			
+			&:hover {
+				/* box-shadow: 0px 0px 12px #cecece; */
+			}
+			
+			.edit-link {
+				text-align: center;
+			
+				a, a:link, a:visited, {
+					color: $link;
+				}
+				a:active, a:hover, a:focus {
+					color: $link_active;
+				}
+			}
+			
+			button.addToCart {
+				border: 1px solid $link;
+				color: $link;
+				border-radius: 2px;
+				padding: 4px;
+				width: 100%;
+				padding-left: 24px;
+				min-height: 30px;
+				height: 36px;
+				position: relative;
+				background:  url(../img/logos/paypal_tag_faded.png);
+				background-repeat: no-repeat;
+				background-position: 4px 4px;
+				cursor: pointer;
+			}
+			button.addToCart:active,
+			button.addToCart:hover,
+			button.addToCart:focus {
+				background:  url(../img/logos/paypal_tag.png);
+				background-repeat: no-repeat;
+				background-position: 4px 4px;
+				border-color: $link_active;
+				color: $link_active;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.storeNav {
+	
+	ul {
+		list-style-type: none;
+		
+		li {
+			display: inline-block;
+			font-size: 2.4em;
+			font-family: 'headline_hplhstwo';
+			margin-right: 2em;
+			
+			a, a:link, a:visited {
+				color: $black_06;
+			}
+			
+			a:hover, a:active, a:focus {
+				color: $black_08;
+			}
+			
+			a.active {
+				color: $body;
+			}
+			
+		}
+	}
+
+}
+

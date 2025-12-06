@@ -1,0 +1,156 @@
+/* ADMIN STUFFS */
+
+#main.admin {
+	position: relative;
+	
+	.adminNav {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		
+		.adminLink {
+			margin-right: 1em;
+			min-width: 200px;
+			max-width: 300px;
+			display: inline-block;
+			text-align: center;
+			
+				a, a:link, a:visited {
+					border: 1px solid $black_02;
+					display: block;
+					padding: 1em;
+					border-radius: 8px;
+					text-decoration: none;
+					color: $link;
+					
+					.fas {
+						margin-right: .5em;
+					}
+					&:hover, &:active, &:focus {
+						box-shadow: 0px 0px 12px $black_02;
+					}
+			}
+		}
+		
+	}
+	.adminFilter {
+		margin-bottom: 2em;
+	}
+	
+	
+	div.tools {
+		position: absolute;
+		top: 2em;
+		right: 0;
+		
+		ul {
+			list-style-type: none;
+			
+			li {
+				display: inline-block;
+				margin-right: 10px;
+				
+				a, a:link, a:visited { 
+					color: $link;
+				}
+
+				a:focus, a:active, a:focus {
+					color: $link_active;
+				}
+				
+				
+			}
+		}
+		
+		.productTools {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			
+			li {
+				display: inline-block;
+			}
+		}
+	}
+	.message {
+		padding: .5em 1em;
+		margin-bottom: 2em;
+		
+		&.success {
+			border: 1px solid #00aa00;
+			border-radius: 8px;
+		}
+	}
+	.messageProductName {
+		font-weight: bold;
+	}
+
+	form {
+		margin: 0 auto;
+		width: 600px;
+		
+				
+		.formGroup ul {
+			list-style: none;
+			
+			input {
+				display: inline;
+				margin-right: 0.5em;
+			}
+		}
+	}
+	
+	table {
+		width: 100%;
+		
+		tr:nth-child(2n+2) {
+			background-color: $black_01;
+		}
+		
+		thead tr {
+			background-color: $black_03;
+		}
+		
+		th, td {
+			padding: 1em .5em;
+		}
+		
+		td {
+			a, a:link, a:visited { 
+				color: $link;
+			}
+
+			a:focus, a:active, a:focus {
+				color: $link_active;
+			}
+		}
+		
+		th {
+			text-align: left;
+		}
+		
+		td.actions {
+			ul {
+				margin: 0;
+				padding: 0;
+				
+				li {
+					display: inline;
+					margin-right: 10px;
+				}
+				li:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	
+	.formGroup {
+		margin-bottom: 2em;
+	}
+	
+	.productCategory {
+		margin-bottom: 4em;
+	}
+	
+}

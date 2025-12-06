@@ -1,0 +1,50 @@
+/* FOOTER */
+
+
+footer {
+	text-align: center;
+	p {
+		font-size: .8em;
+	}
+	
+	nav .social.navList li {
+		font-size: 1em;
+	}
+	
+}
+
+
+footer,
+footer p,
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active,
+footer a:focus,
+footer iframe
+ {
+	color: $black;
+}
+
+footer #partnered,
+footer #poweredBy {
+	margin-bottom: 1.4em;
+	text-align: center;
+}
+
+body.full_black {
+	
+	footer,
+	footer p,
+	footer a,
+	footer a:link,
+	footer a:visited,
+	footer a:hover,
+	footer a:active,
+	footer a:focus,
+	footer iframe {
+		color: $white;
+	}
+	
+}

@@ -1,0 +1,45 @@
+/* PAGINATION */
+
+.pagination {
+	text-align: center;
+	font-family: 'OpenSansRegular';
+	
+	ul {
+		list-style-type: none;
+		margin: 0 auto;
+		padding: 0;
+		
+		li {
+			font-size: 1.2em;
+			display: inline;
+			margin-right: 20px;
+			
+			&.disabled {
+				color: $black_03;
+			}
+			&.active {
+				font-weight: bold;
+				font-family: 'OpenSansBold';
+			}
+			
+		}
+		li:last-child {
+			margin-right: 0;
+		}
+		
+		
+	}
+	
+	
+	a, a:link, a:visited {
+		color: $link;
+		text-decoration: none;
+	}
+	a:hover, a:focus, a:active {
+		text-decoration: underline;
+	}
+	
+	.pageLocation {
+		text-align: center;
+	}
+}

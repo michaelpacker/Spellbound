@@ -1,0 +1,35 @@
+/* CSS Document */
+
+nav {
+	width: 100%;
+	padding: 1em 0;
+	text-align: center;
+	
+	.navList {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		
+		li {
+			display: inline;
+			font-family: 'OpenSansLight';
+			font-size: 1.6em;
+			text-transform: uppercase;
+			margin-right: 1em;
+			
+			a, a:link, a:visited {
+				color: $dark_white;
+				text-decoration: none;
+			}
+			
+			a:hover, a:focus, a:active {
+				color: $dark_white;
+				 text-shadow: 0px 0px 12px $dark_white;
+			}
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
