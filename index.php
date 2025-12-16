@@ -106,7 +106,7 @@
 					
 				}
 			} else {
-				echo "<p class='intro'>We don't have any shows scheduled right now. Check back soon.</p>";
+				echo "<p class='intro'>We don't have any shows scheduled right now. Check back soon!</p>";
 			}
 			?>
 	</div>
